@@ -1,3 +1,32 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: url(https://images.pexels.com/photos/972391/pexels-photo-972391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    /* background: pink; */
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+#block1 {
+    display: block;
+    height: 400px;
+    width: 80%;
+}
+
+
+
 /* library zone */
 
 :root {
