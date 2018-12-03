@@ -1,0 +1,90 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: url(https://images7.alphacoders.com/411/411820.jpg);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+#block1 {
+    height: 400px;
+    width: 80%;
+}
+
+
+
+/* library zone */
+
+.glass {
+    border-radius: 15px;
+    background: linear-gradient(to right, rgba(226, 226, 226, .3) 0%, rgba(254, 254, 254, .3) 23%, rgba(228, 228, 228, .3) 80%, rgba(219, 219, 219, .3) 100%);
+    /* background-color: rgba(255, 255, 255, .3); */
+    box-shadow: 5px 10px rgba(1, 1, 1, .5);
+    /* filter: drop-shadow(0 0 20px #333); */
+}
+
+.mirror {
+    background: url(https://images.pexels.com/photos/1054289/pexels-photo-1054289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 100% / cover;
+    position: relative;
+    z-index: 3;
+    color: black;
+    font-size: 2em;
+}
+
+.mirror:after {
+    z-index: 1;
+    background: inherit;
+    transform: scaleY(-1);
+    opacity: .4;
+}
+
+.mirror:before {
+    z-index: 2;
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #fff); */
+}
+
+.mirror:after,
+.mirror:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+}
+
+
+.mirror-text {
+    /* text-shadow: 4px 4px rgba(1, 1, 1, .5); */
+    position: relative;
+    display: inline-block;
+}
+
+.mirror-text:after,
+.mirror-text:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0px;
+    transform: scaleY(-1);
+    transform-origin: bottom;
+}
+
+.mirror-text:after {
+    content: attr(data-content);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.5) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
