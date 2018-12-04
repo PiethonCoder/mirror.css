@@ -6,8 +6,8 @@ html {
 }
 
 body {
-    background: url(https://images.pexels.com/photos/972391/pexels-photo-972391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    /* background: pink; */
+/*     background: url(https://images.pexels.com/photos/972391/pexels-photo-972391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
+    background: #000a9c;
 }
 
 main {
@@ -30,7 +30,7 @@ main {
 /* library zone */
 
 :root {
-    --shade: black;
+    --shade: #000a9c;
 }
 
 /* glass */
@@ -90,6 +90,8 @@ main {
     color: inherit;
     z-index: 1;
     background-image: inherit;
+    background-size:inherit;
+    background-position: inherit;
     transform: scaleY(-1);
     opacity: .5;
 }
