@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <meta charset="UTF-8">
     <title>mirror.css</title>
 </head>
@@ -14,21 +15,31 @@
                 <h1 data-content="Mirror.css" class="mirror-text">
                     Mirror.css
                 </h1>
-            </div>
 
-            <div id="links">
-                <div class="b"><h3>Download</h3></div>
-                <div class="b"><h3>CDN Link</h3></div>
+                <a href="#s1">
+                    <div class="button">Download</div>
+                </a>
             </div>
         </header>
 
-        <!--         <section id="s1">
-            <div id="download" class="glass">
-                <h2>download</h2>
+        <section id="s1">
+            <div id="cdn">
+                <h2>cdn link</h2>
+                <p style="color:silver">normal</p>
+                <div><code>&lt;link src=&quot;<span class="cdn-link">https://cdn.jsdelivr.net/gh/PiethonCoder/mirror.css/mirror.css</span>&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&gt;</code></div>
+                <p style="color:silver">minimized</p>
+                <div><code>&lt;link src=&quot;<span class="cdn-link">https://cdn.jsdelivr.net/gh/PiethonCoder/mirror.css/mirror.min.css</span>&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&gt;</code></div>
             </div>
-            <div>--or--</div>
-            <div></div>
-        </section> -->
+        </section>
+
+        <section id="s2" class="mirror">
+            <a href="#s2">
+                <div id="download" class="button2">Download</div>
+            </a>
+            <a href="https://github.com/PiethonCoder/mirror.css">
+                <div class="button2">Documentation</div>
+            </a>
+        </section>
 
 
     </main>

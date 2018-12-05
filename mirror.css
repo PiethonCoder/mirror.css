@@ -1,7 +1,7 @@
 /* library zone */
 
 :root {
-    --shade: black;
+    --shade: white;
 }
 
 /* glass */
@@ -46,13 +46,17 @@
     filter: blur(7px);
 }
 
+.foggy-glass>* {
+    z-index: 1;
+}
+
 /* mirror */
 
 /* change :root --shade to your color */
 /* only works with solid background color */
+/* if there is a slim visible line, ajust the elements width */
 
 .mirror {
-    background: url(https://images.pexels.com/photos/1054289/pexels-photo-1054289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) 100% / cover;
     position: relative;
     z-index: 3;
 }
@@ -60,15 +64,17 @@
 .mirror:after {
     color: inherit;
     z-index: 1;
+    background-color: inherit;
     background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
     transform: scaleY(-1);
-    opacity: .5;
+    opacity: .8;
 }
 
 .mirror:before {
     z-index: 2;
-    background: linear-gradient(to bottom, rgba(1, 1, 1, 0.1), var(--shade), var(--shade));
-    /* background: linear-gradient(to bottom, rgba(1, 1, 1, 0.1),currentColor, currentColor); */
+    background: linear-gradient(to bottom, rgba(1, 1, 1, .4), var(--shade), var(--shade));
 }
 
 .mirror:after,
@@ -79,7 +85,6 @@
     width: 100%;
     height: 100%;
     bottom: -100%;
-    margin-bottom: -6px;
 }
 
 /* mirror text */
@@ -87,10 +92,12 @@
 
 .mirror-text {
     position: relative;
+    line-height: 0.8;
 }
 
 .mirror-text:after {
     color: inherit;
+    line-height: inherit;
     position: absolute;
     z-index: 1;
     right: 0;
@@ -98,7 +105,7 @@
     display: block;
     content: attr(data-content);
     transform: scaleY(-1);
-    opacity: .9;
+    opacity: .6;
     font-size: inherit;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 35%, currentColor 100%);
     -webkit-background-clip: text;
