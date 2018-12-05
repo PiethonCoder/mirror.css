@@ -4,6 +4,11 @@ html {
     width: 100%;
 }
 
+
+main{
+	height:100%;
+}
+
 a {
     outline: none;
     color: inherit;
