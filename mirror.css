@@ -24,7 +24,6 @@
     box-shadow: 5px 10px 15px 3px rgba(1, 1, 1, .5);
     overflow: hidden;
     position: relative;
-    background-attachment: fixed;
 }
 
 .foggy-glass:before {
@@ -32,6 +31,9 @@
     position: absolute;
     z-index: 0;
     background: inherit;
+	background-attachment:inherit;
+	background-size:inherit;
+	background-position:inherit;
 
     display: block;
     width: 100%;
