@@ -30,14 +30,13 @@
 .foggy-glass:before {
     content: "";
     position: absolute;
-    right: -10px;
-    top: 0px;
     z-index: 0;
     background: inherit;
 
     display: block;
-    width: 102%;
-    height: 102%;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
 
     -webkit-filter: blur(7px);
     -moz-filter: blur(7px);
@@ -48,6 +47,7 @@
 
 .foggy-glass>* {
     z-index: 1;
+    position: relative;
 }
 
 /* mirror */
