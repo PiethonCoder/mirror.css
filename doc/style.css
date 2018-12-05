@@ -45,7 +45,7 @@ a {
 
 .block {
     margin-top: 5px;
-    padding:50px;
+    padding: 50px;
     border-bottom: 1px solid silver;
     min-height: 400px;
     height: auto;
@@ -53,16 +53,16 @@ a {
     text-align: center;
 }
 
-.i{
-	color:lightcoral;
-	font-style:italic;
+.i {
+    color: lightcoral;
+    font-style: italic;
 }
 
-#mirror-image{
-	background-image: url(https://images.pexels.com/photos/1640076/pexels-photo-1640076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-	background-size:cover;
-	width:61%;
-	height:300px;
-	margin:auto;
-	margin-bottom:300px;
+#mirror-image {
+    background-image: url(https://images.pexels.com/photos/1640076/pexels-photo-1640076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    width: 61%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 300px;
 }
