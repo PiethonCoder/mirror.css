@@ -28,7 +28,7 @@ a {
     left: 0px;
     background-image: url(https://images.pexels.com/photos/248091/pexels-photo-248091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-position: top;
-	background-size:cover;
+    background-size: cover;
     border-radius: 0px;
 }
 
@@ -74,14 +74,27 @@ a {
     margin-bottom: 300px;
 }
 
-.tips{
-	cursor:pointer;
-	display:none;
-	height:auto;
-	width:100%;
-	text-align:center;
+.tip {
+    cursor: pointer;
+    display: none;
+    height: auto;
+    width: 100%;
+    text-align: center;
 }
 
-.tips:focus{
-	display:block;
+.show {
+    cursor: pointer;
+}
+
+
+#show_tips2 {
+    margin-top: 100px;
+}
+
+#show_tips3 {
+    margin-top: 100px;
+}
+
+#show_tips4 {
+    margin-top: 100px;
 }

@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/PiethonCoder/mirror.css/mirror.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <meta charset="UTF-8">
@@ -41,18 +42,22 @@
                 <h1>Mirror</h1>
                 <p>.mirror is a class that will reflect the background image or color assigned to it.<br> A solid background color is needed for the effect to work. copy <span class="i">:root {--shade: yourColorHere;}</span> into your css, and change <span class="i">'yourColorHere' </span>to your background color</p>
                 <div id="mirror-image" class="mirror"></div>
-                <a href=".tips">Not working? Heres some tips.</a>
-				<ul class="tips">
-					<li> make sure you changed :root --shade to your color </li>
-					<li>the effect only works with a solid background color</li>
-					<li>if there is a slim visible line, ajust the elements width slightly<br>  *this is a browser rendering issue</li>
-				</ul>
+                <p id="show_tips1" class="show">Not working? Heres some tips.</p>
+                <ul id="tips1" class="tip">
+                    <li> make sure you change :root --shade to your color </li>
+                    <li>the effect only works with a solid background color</li>
+                    <li>if there is a slim visible line, ajust the elements width slightly<br> *this is a browser rendering issue</li>
+                </ul>
             </div>
             <div class="block" id="mirror-text-s">
                 <h1>Mirror Text</h1>
                 <p>.mirror-text is a class that will give you a reflection of your text. Add the<span class="i"> .miror-text </span>class to any h1, p, span ect. tag that has text in it, and give the element the<span class="i"> data-content </span> attribute, set equal to the text that you want to mirror. &lt;h1 <span class="i">class</span>=&quot;mirror-text&quot; <span class="i">data-content</span>=&quot;hello world&quot;&gt;hello world&lt;/h1&gt;</p>
                 <h1 class="mirror-text" data-content="hello world">hello world</h1>
-                <a href=""></a>
+                <p id="show_tips2" class="show">Not working? Heres some tips.</p>
+                <ul id="tips2" class="tip">
+                    <li>make sure the data-content property is set for your element</li>
+                    <li>the mirror-text class should be added to the element that contains your text</li>
+                </ul>
             </div>
             <div class="block" id="glass-s">
                 <h1>Glass</h1>
@@ -60,15 +65,24 @@
                 <div class="glass" style="height:300px;width:600px;margin:auto;display:flex;justify-content:center;align-items: center;">
                     <h2 class="mirror-text" data-content="you can add the mirror-text in combination with the glass class for an interesting design.">you can add the mirror-text in combination with the glass class for an interesting design.</h2>
                 </div>
-                <a href=""></a>
+                <p id="show_tips3" class="show">Not working? Heres some tips.</p>
+                <ul id="tips3" class="tip">
+                    <li>the style should look ok with all colors except black, because of the color of the shading</li>
+                </ul>
             </div>
             <div class="block" id="foggy-glass-s">
                 <h1>Foggy Glass</h1>
                 <p>.foggy-glass will give you a blurry background for the image of your choosing. Give a element the .foggy-glass and a background-image.<br>&lt;div style=&quot;background-image:url(img.jpg);background-position:center;&quot;&gt; &lt;div class=&quot;<span class="i">foggy-glass</span>&quot; style=&quot;<span class="i">background-image:url(img.jpg)</span>;&quot;&gt;&lt;/div&gt; &lt;/div&gt;</p>
                 <div style="background-image:url(https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);height:500px;width:600px;margin:auto;display:flex;align-items:center;justify-content:center;background-position:center;">
-                    <div class="foggy-glass" style="background-image:url(https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);height:60%;width:60%;color:gainsboro;"><h3>if your background element and the blurry element have the same background image, you get this kind of effect.</h3></div>
+                    <div class="foggy-glass" style="background-image:url(https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);height:60%;width:60%;color:gainsboro;">
+                        <h3>if your background element and the blurry element have the same background image, you get this kind of effect.</h3>
+                    </div>
                 </div>
-                <a href=""></a>
+                <p id="show_tips4" class="show">Not working? Heres some tips.</p>
+                <ul id="tips4" class="tip">
+                    <li>for the fog effect, your background element and the foggy-glass element need to have the same background image</li>
+                    <li>try using background-image, if your using the background propery</li>
+                </ul>
             </div>
         </section>
     </main>
