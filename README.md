@@ -1,9 +1,5 @@
 # mirror.css
 
 
-<style>
-  a{
-    color:steelblue;
-  }
-</style> 
-find all you need to know <a href="">here</a>
+
+find all you need to know <a href="https://piethoncoder.github.io/mirror.css/" style="color:steelblue;">here</a>
