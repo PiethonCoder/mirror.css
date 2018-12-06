@@ -73,3 +73,15 @@ a {
     margin: auto;
     margin-bottom: 300px;
 }
+
+.tips{
+	cursor:pointer;
+	display:none;
+	height:auto;
+	width:100%;
+	text-align:center;
+}
+
+.tips:focus{
+	display:block;
+}
