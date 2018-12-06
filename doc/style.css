@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Text+Me+One');
+
 body,
 html,
 main {
     height: 100%;
     width: 100%;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Text+Me+One');
 
 h1,
 h2,
@@ -17,7 +17,6 @@ h6 {
 }
 
 a {
-    /* text-decortation: none; */
     color: inherit;
     text-decoration-color: #bd3149 !important;
 }
@@ -28,7 +27,8 @@ a {
     top: 0px;
     left: 0px;
     background-image: url(https://images.pexels.com/photos/248091/pexels-photo-248091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-position: right;
+    background-position: top;
+	background-size:cover;
     border-radius: 0px;
 }
 

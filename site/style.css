@@ -26,6 +26,7 @@ header {
     height: 100%;
     background: url(https://images.pexels.com/photos/1559117/pexels-photo-1559117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-position: center;
+	background-attachment:fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +45,7 @@ header {
 }
 
 .button {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(119, 108, 114);
     margin-top: 75px;
     border-radius: 10px;
     padding: 12px;
